@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h1>Jerome Cameron</h1>
-<h4>@jimmy</h4>
-<h4>Kingston, Jamaica</h4>
-<h4>Joined February 2019</h4>
 
-<p>I am a part time student persuing a degree in Computer Science always looking for the next best thing</p>
+<div id = "myInfo">
+    <img src = "{{url_for('static', filename='avatar.png')}}" alt = "My Avatar">
+    <h1>Jerome Cameron</h1>
+    <h4>@jimmy876</h4>
+    <h4>Kingston, Jamaica</h4>
+    <h4>"{{ date_joined }}"</h4>
+    <p>I am a part time student persuing a degree in Computer Science always looking for the next best thing</p>
+</div>
 
 <div id = "details">
     <div class = "items">
@@ -24,5 +27,7 @@
         <h4>340</h4>
     </div>
 </div>
+
+<button>Follow</button>
 
 {% endblock %}
