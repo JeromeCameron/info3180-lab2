@@ -18,7 +18,6 @@ def home():
     """Render website's home page."""
     return render_template('home.html')
 
-
 @app.route('/about/')
 def about():
     """Render the website's about page."""
@@ -26,12 +25,11 @@ def about():
 
 @app.route("/profile")
 def profile():
-    return render_template("profile.html" date_joined=format_date())
+    return render_template("profile.html", date_joined=format_date())
 
 ## Takes a date and formats it to eg. 'Februay 2019'
-def format_date(date_joined=datetime.date(2019, 2, 3)):
+def format_date(date_joined=datetime.date(2018, 2, 3)):
     return date_joined.strftime("%B")+", "+date_joined.strftime("%Y")
-
 
 ###
 # The functions below should be applicable to all Flask apps.

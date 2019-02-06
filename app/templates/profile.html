@@ -1,33 +1,45 @@
 {% extends "base.html" %}
 
 {% block main %}
+<div id = "main">
+<div id= "container">
+    <div id = "myInfo">
+        <img id = "avatar" src = "{{url_for('static', filename='images/avatar.png')}}" alt = "My Avatar">
+        <h1>Jerome Cameron</h1>
+        <h4>@jimmy876</h4>
+        <h4>Kingston, Jamaica</h4>
+        <h4>Joined {{ date_joined }}</h4>
+    </div>
 
-<div id = "myInfo">
-    <img src = "{{url_for('static', filename='avatar.png')}}" alt = "My Avatar">
-    <h1>Jerome Cameron</h1>
-    <h4>@jimmy876</h4>
-    <h4>Kingston, Jamaica</h4>
-    <h4>"{{ date_joined }}"</h4>
-    <p>I am a part time student persuing a degree in Computer Science always looking for the next best thing</p>
+    <div id = "details">
+
+        <p>I am a part-time student pursuing a degree in Computer Science, always looking for the next best thing.</p>
+    
+        <div id = "stats">
+
+            <div class = "items">
+                <h4>56</h4>
+                <h3>Post</h3>
+            </div>
+            
+            <div class = "items">
+                <h4>80</h4>
+                <h3>Following</h3>
+            </div>
+    
+            <div class = "items">
+                <h4>340</h4>
+                <h3>Followers</h3>
+            </div> 
+
+        </div>   
+        <div id = "button">
+            <button>Follow</button>
+        </div>   
+
+    </div>
+
 </div>
-
-<div id = "details">
-    <div class = "items">
-        <h3>Post</h3>
-        <h4>56</h4>
-    </div>
-
-    <div class = "items">
-        <h3>Following</h3>
-        <h4>80</h4>
-    </div>
-
-    <div class = "items">
-        <h3>Followers</h3>
-        <h4>340</h4>
-    </div>
 </div>
-
-<button>Follow</button>
 
 {% endblock %}

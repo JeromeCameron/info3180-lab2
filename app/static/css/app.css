@@ -1,3 +1,130 @@
 body {
     padding-top: 5rem;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+#main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    width: 400px;
+    height: 520px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid darkgray;
+    /* background-color: #F05738; */
+    background-image: url("../images/gradient.png");
+    position: relative;
+    border-bottom: none;
+}
+
+#myInfo{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+#details{
+    width: 400px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid darkgray;
+    border-top: none;
+    border-left: none;
+}
+
+#avatar{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(15, 15, 15, 0.815);
+    background-color: white;
+    padding: 5px;
+}
+
+#myInfo h4{
+    font-size: 14px;
+    color: white;
+    text-shadow: .6px .6px .6px black;
+    font-weight: 600;
+}
+
+#stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#myInfo h1 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: .6px .6px .6px black;
+    color: white;
+}
+.items h3{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(71, 68, 68);
+}
+
+.items h4{
+    font-size: 20px;
+    font-weight: 900;
+    color: #002333;
+}
+
+.items{
+    text-align: center;
+}
+
+#container p{
+    font-size: 15px;
+    color: rgb(102, 97, 97);
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#container button{
+    background-color: #006999;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#button{
+    align-self: center;
+}
