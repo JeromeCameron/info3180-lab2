@@ -25,10 +25,10 @@ def about():
 
 @app.route("/profile")
 def profile():
-    return render_template("profile.html", date_joined=format_date())
+    return render_template("profile.html", date_joined=format_date_joined())
 
 ## Takes a date and formats it to eg. 'Februay 2019'
-def format_date(date_joined=datetime.date(2018, 2, 3)):
+def format_date_joined(date_joined=datetime.date(1926, 11, 3)):
     return date_joined.strftime("%B")+", "+date_joined.strftime("%Y")
 
 ###
